@@ -378,9 +378,21 @@ p {
     text-decoration: none;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
+.fa-bars{
+    color: #fff;
+}
 @media screen and (max-width: 768px) {
 .extra-div{
     margin: 20px 0px;
 }
 
+.extraClass {
+    transform: translateY(0px);
+    margin: 20px 0px;
+}
+
+.extraClasse:hover {
+    transform: translateY(0px);
+    transition: .4s;
+}
 }
