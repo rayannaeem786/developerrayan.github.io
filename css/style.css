@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+}
+
+.service-icons a {
+    color: #2fccd0;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 168, 255, 0.3), rgba(0, 168, 255, 0.3)), url(../images/4k-wallpaper-4x4-auto-automobile-1149140.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0% 75%, 0 0);
+}
+
+.header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+
+
+}
+.navbar {
+    opacity: 0;
+    margin-top: -100px;
+
+    transition: all 1s;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+
+    left: 0;
+    right: 0;
+    min-height: 100%;
+    opacity: 0.3;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+
+}
+
+.nav-item a {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.header-section {
+    width: 100%;
+    height: inherit;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+
+.center-div {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.header-buttons a {
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0px 5px;
+    padding: 12px 35px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    outline: none;
+    text-align: center;
+}
+
+.header-buttons a:hover {
+    color: #50d1c0;
+    transition: 0.5s;
+    background-color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.center-div p {
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 10px 0px 20px 0px;
+}
+
+.easy {
+    padding: 50px 0px;
+}
+
+.extra-div {
+    text-align: center;
+    padding: 50px !important;
+    border: 1px solid medium;
+    transition: .6s;
+    border-radius: 10px;
+
+
+}
+
+.extra-div:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+    transition: .5s;
+}
+
+.extra-div h2,
+.service-div h2 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0px 20px 0px;
+}
+
+.offer-head h2 {
+    text-transform: uppercase;
+}
+
+.offer {
+    padding: 50px 0px;
+    margin-bottom: 50px;
+    background: #f7f7f7;
+}
+
+.offer-head {
+    margin-bottom: 50px;
+}
+
+.offer-head h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.names h1 {
+    color: #2e2e2e;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.service-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress {
+    height: 0.6rem !important;
+}
+
+.more-head h2 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.more-data {
+    padding: 40px 0px;
+}
+
+.pricing-head h2 {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.pricing-head {
+    padding-bottom: 50px;
+}
+
+.card-footer {
+    padding: 30px 0px !important;
+}
+
+.price-data .card-footer a {
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    margin: 0px 5px;
+    padding: 12px 35px;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    outline: none;
+    text-align: center;
+}
+
+.price-data .card-footer a:hover {
+    color: #50d1c0;
+    background-color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.price-data ul li {
+    margin: 15px 0px;
+}
+
+.price-styles {
+    font-size: 50px;
+}
+
+.pricing {
+    width: 100%;
+    height: auto;
+
+    position: relative;
+    padding: 50px;
+}
+
+.pricing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+
+    left: 0;
+    right: 0;
+    min-height: 100%;
+    /* opacity: 0.3; */
+    z-index: -1;
+    /* background: linear-gradient( 160deg, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%); */
+
+    background: linear-gradient(160deg, #16c9f6 55%, #fff 0%);
+
+}
+
+.extraClass {
+    transform: translateY(-35px);
+}
+
+.extraClasse {
+    transition: .4s;
+}
+
+.extraClasse:hover {
+    transform: translateY(-35px);
+    transition: .4s;
+}
+
+.extraClasse:hover .price-styles {
+    color: #2fccd0;
+    transition: .4s;
+
+}
+
+.extraClass:hover .price-styles {
+    color: #2fccd0;
+    transition: .4s;
+
+}
+
+.test img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.pricing {
+    margin-bottom: 100px;
+}
+
+.testimonial {
+    background-image: url(../images/rangers.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    padding: 150px 0px;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+
+}
+
+.testimonial::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100%;
+    opacity: 0.4;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+    z-index: -1;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: -50%;
+}
+
+.test-caption h3 {
+    margin-top: 5px;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.test-caption p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #3ccdbb;
+}
+
+.works {
+    color: #fff;
+    font-size: 1rem;
+  
+    font-weight: 700;
+}
+.contact{
+    margin: 50px 0px;
+}
+.contact-data form input{
+
+    margin: 20px 0px;
+}
+.form-btn{
+    margin-top: 50px !important;
+}
+.form-btn a {
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0px 5px;
+    padding: 12px 35px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    outline: none;
+    text-align: center;
+}
+
+.contact-data:hover a{
+    color: #50d1c0;
+    background-color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 768px) {
+.extra-div{
+    margin: 20px 0px;
+}
+
+}
